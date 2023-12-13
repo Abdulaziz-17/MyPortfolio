@@ -1,0 +1,19 @@
+$oswald: ('Regular', 400), ('Bold', 700), ('Medium', 500);
+
+@each $name, $weight in $oswald {
+    @font-face {
+        font-family: "Oswald";
+        src: url(../fonts/Oswald-#{$name}.ttf);
+        font-weight:  $weight;
+    }
+}
+
+$inter: ('Regular', 400), ('Bold', 700), ('Medium', 500);
+
+@each $name, $weight in $inter {
+    @font-face {
+        font-family: "Inter";
+        src: url(../fonts/Inter-#{$name}.ttf);
+        font-weight:  $weight;
+    }
+}
